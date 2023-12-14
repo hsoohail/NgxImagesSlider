@@ -1,1 +1,3 @@
 # NgxImagesSlider
+
+# NgxImagesSlider Demo App

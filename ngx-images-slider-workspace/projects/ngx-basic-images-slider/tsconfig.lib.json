@@ -10,5 +10,9 @@
   },
   "exclude": [
     "**/*.spec.ts"
-  ]
+  ],
+  "baseUrl": "./",
+  "paths": {
+    "@ngx-basic-images-slider": ["src/*"]
+  }
 }
