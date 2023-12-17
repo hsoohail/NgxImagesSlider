@@ -1,0 +1,10 @@
+<div class="preview {{PreviewContainerClass ?? ''}}" [ngStyle]="{'height': Height == null ? 'inherit' : Height}">
+  <img [@carouselAnimation]="animate" [src]="selected" class="{{PreviewImageClass ?? ''}}">
+</div>
+<div class="thumbnails mt-3 {{ThumbnailsRowClass ?? ''}}" id="thumbnails-row">
+  <div *ngFor="let img of Images" class="thumbnail me-2 {{ThumbnailContainerClass ?? ''}}" (click)="selectImage(img)">
+    <img src="{{img}}" class="{{ThumbnailImageClass}}">
+  </div>
+</div>
+<img src="{{SvgPreviousIcon ?? 'assets/angle-left-svgrepo-com.svg'}}" class="nav-left">
+<img src="{{SvgPreviousIcon ?? 'assets/angle-right-svgrepo-com.svg'}}" class="nav-right">
