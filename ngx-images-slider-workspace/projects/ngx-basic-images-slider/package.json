@@ -1,6 +1,6 @@
 {
   "name": "ngx-basic-images-slider",
-  "version": "0.0.8",
+  "version": "0.0.17",
   "peerDependencies": {
     "@angular/common": "^17.0.0",
     "@angular/core": "^17.0.0"

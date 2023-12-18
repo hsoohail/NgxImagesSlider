@@ -1,19 +1,9 @@
 import {AfterViewInit, Component, Input, OnInit} from '@angular/core';
-import {transition, trigger, useAnimation} from "@angular/animations";
-import {scaleIn, scaleOut} from "./animations";
 
 @Component({
-  selector: 'ngx-ngx-basic-images-slider',
-  templateUrl: './ngx-ngx-basic-images-slider.component.html',
-  styleUrls: ['./ngx-ngx-basic-images-slider.component.scss'],
-  animations: [
-    trigger(
-      "carouselAnimation", [
-        transition("0 => 1", [useAnimation(scaleIn, {params: { time: '500ms' }} )]),
-        transition("1 => 0", [useAnimation(scaleOut, {params: { time: '500ms' }})]),
-      ]
-    )
-  ]
+  selector: 'ngx-basic-images-slider',
+  templateUrl: './ngx-basic-images-slider.component.html',
+  styleUrls: ['./ngx-basic-images-slider.component.scss']
 })
 export class NgxBasicImagesSliderComponent implements OnInit, AfterViewInit {
   @Input() Images: string[] = [];
@@ -29,7 +19,6 @@ export class NgxBasicImagesSliderComponent implements OnInit, AfterViewInit {
   selected = "";
   showLeftArrow = false;
   showRightArrow = false;
-  animate = false;
   thumbnailsRow: HTMLElement | undefined = undefined;
   thumbnailsRowScrolledDistance = 0;
 
@@ -47,10 +36,6 @@ export class NgxBasicImagesSliderComponent implements OnInit, AfterViewInit {
 
   selectImage(img: string) {
     this.selected = img;
-    this.animate = true;
-    setTimeout(() => {
-      this.animate = false;
-    }, 1);
   }
 
   onNavRightClick() {

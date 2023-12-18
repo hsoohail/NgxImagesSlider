@@ -1,11 +1,16 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import {NgxBasicImagesSliderModule} from "ngx-basic-images-slider";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    NgxBasicImagesSliderModule
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -36,6 +36,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-top: 0.5em;
 }
 
 .thumbnail img {
@@ -46,8 +47,7 @@
 .nav-right, .nav-left {
   cursor: pointer;
   position: relative;
-  top: -4em;
-  margin-bottom: -4em;
+  top: -3em;
   width: 1.5rem;
   height: 1.5rem;
 }

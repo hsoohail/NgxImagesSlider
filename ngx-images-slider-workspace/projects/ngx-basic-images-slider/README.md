@@ -2,23 +2,20 @@
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
 
-## Code scaffolding
+# Usage:
 
-Run `ng generate component component-name --project ngx-basic-images-slider` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-basic-images-slider`.
-> Note: Don't forget to add `--project ngx-basic-images-slider` or else it will be added to the default project in your `angular.json` file. 
+Install npm package https://www.npmjs.com/package/ngx-basic-images-slider
 
-## Build
+Import Module
 
-Run `ng build ngx-basic-images-slider` to build the project. The build artifacts will be stored in the `dist/` directory.
+Add assets to angular.json/package.json if using default arrow icons like this:
 
-## Publishing
 
-After building your library with `ng build ngx-basic-images-slider`, go to the dist folder `cd dist/ngx-basic-images-slider` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-basic-images-slider` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+"assets": [
+    (default inclusions),
+    {
+	"glob": "**/*",
+        "input": "./node_modules/ngx-basic-images-slider/assets",
+        "output": "assets/"
+    }
+]
